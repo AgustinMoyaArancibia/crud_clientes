@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bvNkO6uOoV8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\agusf\\OneDrive\\Desktop\\crud_clientes\\CrudClientes\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\agusf\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
