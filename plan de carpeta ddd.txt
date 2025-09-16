@@ -1,0 +1,62 @@
+src/
+├─ Domain/
+│  └─ Entities/
+│     ├─ User.cs
+│     └─ Client.cs
+├─ Application/
+│  ├─ Common/
+│  │  ├─ Paging/
+│  │  │  ├─ PagedRequest.cs
+│  │  │  └─ PagedResult.cs
+│  │  └─ Results/
+│  │     └─ Result.cs
+│  └─ Features/
+│     ├─ Users/
+│     │  ├─ Models/                 # DTOs de aplicación (internos)
+│     │  │  ├─ UserReadDto.cs
+│     │  │  ├─ UserCreateDto.cs
+│     │  │  └─ UserUpdateDto.cs
+│     │  ├─ Validation/
+│     │  │  ├─ UserCreateValidator.cs
+│     │  │  └─ UserUpdateValidator.cs
+│     │  ├─ Mappers/
+│     │  │  └─ UserMappers.cs
+│     │  └─ Services/
+│     │     └─ IUserService.cs
+│     └─ Clients/
+│        ├─ Models/
+│        │  ├─ ClientReadDto.cs
+│        │  ├─ ClientCreateDto.cs
+│        │  └─ ClientUpdateDto.cs
+│        ├─ Validation/
+│        │  ├─ ClientCreateValidator.cs
+│        │  └─ ClientUpdateValidator.cs
+│        ├─ Mappers/
+│        │  └─ ClientMappers.cs
+│        └─ Services/
+│           └─ IClientService.cs
+├─ Infrastructure/
+│  ├─ Data/AppDbContext.cs
+│  └─ Services/
+│     ├─ UserService.cs
+│     └─ ClientService.cs
+└─ WebApi/
+   ├─ Contracts/                     # Contratos de la API (públicos)
+   │  ├─ Users/
+   │  │  ├─ Requests/
+   │  │  │  ├─ UserCreateRequest.cs
+   │  │  │  └─ UserUpdateRequest.cs
+   │  │  └─ Responses/
+   │  │     └─ UserResponse.cs
+   │  └─ Clients/
+   │     ├─ Requests/
+   │     │  ├─ ClientCreateRequest.cs
+   │     │  └─ ClientUpdateRequest.cs
+   │     └─ Responses/
+   │        └─ ClientResponse.cs
+   ├─ Mappers/                       # Mapeos API↔Application
+   │  ├─ UserApiMappers.cs
+   │  └─ ClientApiMappers.cs
+   └─ Controllers/
+      ├─ UsersController.cs
+      └─ ClientsController.cs
